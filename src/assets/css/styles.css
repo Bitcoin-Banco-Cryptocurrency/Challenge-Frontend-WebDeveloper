@@ -1,0 +1,45 @@
+* {box-sizing: border-box;}
+html, body {background-color: #10171e; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px; color: #FFFFFF;}
+
+input[type='text'] {background-color: #10171e; border: none; color: #eee; padding: 15px;}
+
+.btn-1 {border: none; cursor: pointer; background-color: #1da1f2; color: #ffffff; font-weight: bold;}
+.btn-1:hover {background-color: #1a91da;}
+
+.btn-2 {display: flex; justify-content: center; align-items: center; border: 1px solid #8899a6; background-color: transparent; color: #8899a6; padding: 8px 10px; margin: 0 5px 0 0; cursor: pointer;}
+.btn-2:hover {background-color: #8899a6; color: #000;}
+.btn-2.active {border-color: #1da1f2; background-color: #1da1f2; color: #FFF;}
+
+.center {width: 100%; max-width: 1240px; margin: auto; padding: 0 20px;}
+.w-100 {width: 100%;}
+.dpb {display: block;}
+
+.input-button {display: flex;}
+.input-button input[type='text'] {flex: 1;}
+.input-button .btn-1 {min-width: 120px;}
+
+.todo-add {padding: 20px; margin: 50px 0 20px; background-color: #15202b;}
+
+.todo-utils {padding: 10px 15px; background-color: #15202b; display: flex; justify-content: space-between;}
+.todo-utils .order {display: flex;}
+.todo-utils .search input[type='text'] {padding: 8px 10px;}
+
+.no-tasks {background-color: #15202b; display: flex; justify-content: center; align-items: center; border-top: 1px #38444d solid; border-bottom: 1px #38444d solid; padding: 70px 0;}
+.no-tasks p {font-size: 17px;}
+
+.todo-list {list-style: none; display: block; margin: 0 0 30px; padding: 0; border-top: 1px #38444d solid;}
+.todo-list li {width: 100%; display: flex; justify-content: space-between; padding: 15px; background-color: #15202b; border-bottom: 1px #38444d solid;}
+.todo-list li p {margin: 0;}
+.todo-list li .check {min-width: 30px; display: flex; align-items: center;}
+.todo-list li .text {flex: 1;}
+.todo-list li .delete {min-width: 40px; display: flex; align-items: center; justify-content: flex-end;}
+.todo-list li .delete i {cursor: pointer;}
+.todo-list li .delete i:hover {color: #e02451;}
+
+@media all and (max-width: 480px){
+    .input-button {flex-direction: column;}
+    .input-button .btn-1 {min-width: 100%; padding: 15px 0; margin: 5px 0 0;}
+
+    .todo-utils {flex-direction: column;}
+    .todo-utils .search {display: flex; justify-content: flex-end; margin: 5px 0 0;}
+}

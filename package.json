@@ -1,0 +1,27 @@
+{
+  "name": "teste-frontend",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://www.btc-banco.com\">       <img src=\"https://s3.amazonaws.com/assinaturas-de-emails/btc.png\" alt=\"Grupo Bitcoin Banco\"/>   </a> </p>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanef/Challenge-Frontend-WebDeveloper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovanef/Challenge-Frontend-WebDeveloper/issues"
+  },
+  "homepage": "https://github.com/giovanef/Challenge-Frontend-WebDeveloper#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
