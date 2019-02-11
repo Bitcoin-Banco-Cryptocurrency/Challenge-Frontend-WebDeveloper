@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TODO List</title>
+  <link rel="stylesheet" href="/styles/main.min.css">
+</head>
+<body>
+
+  <div class="content">
+
+    <h1>TODO List</h1>
+    <p id="info-message" class="message"></p>
+
+    <form >
+      <div class="form-group">
+        <label for="task-title">Título da Tarefa</label>
+        <input type="text" id="task-title" />
+      </div>
+      <div class="form-group">
+        <label for="task-description">Descrição da tarefa</label>
+        <textarea id="task-description"></textarea>
+      </div>
+      <div class="form-group with-check">
+        <input type="checkbox" id="task-active" checked="true"/><label for="task-active">Ativo</label>
+      </div>
+      <button id="btn-submit">Salvar</button>
+    </form>
+    <div class="data-table">
+      <div class="filter">
+        <label for="task-filter">Filtro</label>
+        <input type="text" id="task-filter" />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th data-field="title" >Titulo</th>
+            <th data-field="description" >Descição</th>
+            <th style="width: 5%" data-field="active" >Ativo</th>
+            <th style="width: 15%">Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <div id="task-view" class="task-view"></div>
+  <script src="/scripts/libs/LocalCache.js" ></script>
+  <script src="/scripts/models/Task.js" ></script>
+  <script src="/scripts/models/TasksList.js" ></script>
+  <script src="/scripts/views/TaskListView.js" ></script>
+  <script src="/scripts/views/MessageView.js" ></script>
+  <script src="/scripts/views/TaskView.js" ></script>
+  <script src="/scripts/controllers/TODOController.js" ></script>
+  <script src="/scripts/index.js" ></script>
+</body>
+</html>

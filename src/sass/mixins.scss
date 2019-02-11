@@ -1,0 +1,19 @@
+$em-base: 16; // prefixo fonte base
+
+/**
+*  Define a converção de Pixels para Rems, por exemplo: 12px com mesmo peso de rem(12)
+ * @mixin Rems px font
+ * @section Convert Rems
+ */
+
+@function rem($pxval) {
+	@if not unitless($pxval) {
+		$pxval: strip-units($pxval);
+	}
+
+	$base: $em-base;
+	@if not unitless($base) {
+		$base: strip-units($base);
+	}
+	@return ($pxval / $base) * 1rem;
+}

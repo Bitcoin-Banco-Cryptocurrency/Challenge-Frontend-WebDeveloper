@@ -1,32 +1,9 @@
-<p align="center">
-  <a href="https://www.btc-banco.com">
-      <img src="https://s3.amazonaws.com/assinaturas-de-emails/btc.png" alt="Grupo Bitcoin Banco"/>
-  </a>
-</p>
 
-## Challenge for Developer
+Este projeto foi desenvolvido com babel para transpilar código es6 para es2015, gulp e npm para autmatização de tarefas. Foi criado também um LocalCache para salvar as tarefas no local storage e não perder as informações ao atualizar a página ou fechar a aba.
 
-A client needs to handle daily jobs trough an list ( TODO LIST ).
+O css é feito através do pré-processador sass e ao rodar os comandos abaixo é criado o css minificado.
 
-Based on this you will need to develop:
+Para rodar o projeto é necessário executar o comando `npm install` para baixar as depenências e `npm start` para iniciar o desenvolvimento. Foi adicionado o browser-sync no projeto para fazer o recarregamento automático ao alterar os arquivos scss, html e js.
 
-- a simple TODO List page;
-- it should be possible to filter tasks (one or more);
-- it must be possible to order the result by Done / Not Done (asc and desc);
+Para criar o build basta rodar `npm run build` e os arquivos serão gerados na pasta build.
 
-The test should be done in HTML, CSS & JS and we do like if you avoid frameworks. We expect at the end of the test, outside the API running, the following items:
-
-- an gulp simple configuration file to improve development time
-- SASS to made easier implement changes on layout
-- an explanation of what is needed to make your project work
-
-Remember that at the time of the evaluation we will look at:
-
-- Code organization;
-- Maintenance;
-- Version control knowledge;
-- HTML, CSS and JS knowledge;
-
-To send us your code, you must:
-
-Make a fork of this repository, and send us a pull-request.

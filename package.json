@@ -1,0 +1,37 @@
+{
+  "name": "challenge-frontend-webdeveloper",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://www.btc-banco.com\">       <img src=\"https://s3.amazonaws.com/assinaturas-de-emails/btc.png\" alt=\"Grupo Bitcoin Banco\"/>   </a> </p>",
+  "main": "index.js",
+  "browserslist": "> 1%",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Frontend-WebDeveloper.git"
+  },
+  "author": "Rodrigo Wladyka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Frontend-WebDeveloper/issues"
+  },
+  "homepage": "https://github.com/Bitcoin-Banco-Cryptocurrency/Challenge-Frontend-WebDeveloper#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/register": "^7.0.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  }
+}
