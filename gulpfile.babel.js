@@ -12,21 +12,21 @@ const server = browserSync.create();
 const config = {
   paths: {
     html: {
-      src: 'src/html/**/*.html',
-      dest: 'build/'
+      src: '*.html',
+      dest: 'dist/'
     },
     styles: {
-      src: 'src/sass/**/*.scss',
-      dest: 'build/styles/'
+      src: 'sass/*.scss',
+      dest: 'dist/css/'
     },
     scripts: {
-      src: 'src/js/**/*.js',
-      dest: 'build/scripts/'
+      src: 'js/*.js',
+      dest: 'dist/js/'
     }
   },
   server:{
     server: {
-      baseDir: './build'
+      baseDir: './dist'
     },
     port: 3000
   }
@@ -43,7 +43,7 @@ function serve( done ) {
 }
 
 function clean() {
-  return del([ 'build' ]);
+  return del([ 'dist' ]);
 }
 
 function html() {

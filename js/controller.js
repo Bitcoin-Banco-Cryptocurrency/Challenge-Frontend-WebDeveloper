@@ -57,10 +57,6 @@
 		this._updateFilterState(page);
 	};
 
-	/**
-	 * An event to fire on load. Will get all items and display them in the
-	 * todo-list
-	 */
 	Controller.prototype.showAll = function () {
 		var self = this;
 		self.model.read(function (data) {

@@ -4,6 +4,10 @@
   </a>
 </p>
 
+## Instructions
+To setup the code, run at the directory on terminal `npm install && npm run build`, after that, run `gulp` and live server will came up and show the example.
+
+
 ## Challenge for Developer
 
 A client needs to handle daily jobs trough an list ( TODO LIST ).
